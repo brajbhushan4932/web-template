@@ -287,7 +287,7 @@ body[data-l="both"] #cta .hi::before{content:" / "}
 <h2 class="rv"><span class="en">Let’s talk</span><span class="hi">आइए बात करें</span></h2>
 <p class="sub rv"><span class="en">Fill the form — it opens Gmail with your details ready to send.</span><span class="hi">फ़ॉर्म भरें — आपकी जानकारी के साथ Gmail खुल जाएगा।</span></p>
 <div class="cwrap">
-<div class="info rv"><p><b>📍 <span class="en">Address</span><span class="hi">पता</span></b>12, Gandhi Nagar, Hyderabad, Telangana</p><p><b>📞 <span class="en">Phone</span><span class="hi">फ़ोन</span></b>+91 98765 43210</p><p><b>🕘 <span class="en">School hours</span><span class="hi">समय</span></b>Mon–Sat, 8:00 AM – 2:00 PM</p><p style="font-size:.85rem;color:var(--mut)"><span class="en">Saraswati Vidya Mandir is a fictional demo school.</span><span class="hi">सरस्वती विद्या मंदिर एक काल्पनिक डेमो स्कूल है।</span></p></div>
+<div class="info rv"><p><b>📍 <span class="en">Address</span><span class="hi">पता</span></b>Ranipur, Patna, Bihar</p><p><b>📞 <span class="en">Phone</span><span class="hi">फ़ोन</span></b>+91 79788 42231</p><p><b>🕘 <span class="en">School hours</span><span class="hi">समय</span></b>Mon–Sat, 8:00 AM – 2:00 PM</p><p style="font-size:.85rem;color:var(--mut)"><span class="en">Saraswati Vidya Mandir is a fictional demo school.</span><span class="hi">सरस्वती विद्या मंदिर एक काल्पनिक डेमो स्कूल है।</span></p></div>
 <form id="f" class="rv">
 <div class="two"><label>Name / नाम<input name="name" required placeholder="Your name / आपका नाम"></label><label>Phone / फ़ोन<input name="phone" type="tel" required placeholder="+91 …"></label></div>
 <div class="two"><label>School name / स्कूल का नाम<input name="school" placeholder="Your school / आपका स्कूल"></label><label>Email / ईमेल<input name="email" type="email" placeholder="you@school.in"></label></div>
@@ -301,7 +301,7 @@ body[data-l="both"] #cta .hi::before{content:" / "}
 <footer><div>📖 Saraswati Vidya Mandir · <span class="hi" style="display:inline">सरस्वती विद्या मंदिर</span></div><div style="opacity:.7;margin-top:6px">Demo website · डेमो वेबसाइट · © 2026</div></footer>
 
 <script>
-var TO="yourname@gmail.com"; // replace with your Gmail address
+var TO="brajbhushan693@gmail.com"; // replace with your Gmail address
 var B=document.body;
 document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){B.dataset.l=b.dataset.v;document.documentElement.lang=b.dataset.v==='hi'?'hi':'en';document.querySelectorAll('.lang button').forEach(function(x){x.classList.toggle('on',x===b)})}});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var n=e.target.querySelector('[data-n]');if(n&&!n.done){n.done=1;var t=+n.dataset.n,s=0;var iv=setInterval(function(){s+=Math.ceil(t/40);if(s>=t){s=t;clearInterval(iv)}n.textContent=s+(t>=100?'+':'')},30)}io.unobserve(e.target);var t2=e.target;setTimeout(function(){t2.classList.remove('rv','in');t2.style.transitionDelay=''},1500)}})},{threshold:.15});
