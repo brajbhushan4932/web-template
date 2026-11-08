@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saraswati Vidya Mandir | सरस्वती विद्या मंदिर</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fff8ec;--bg2:#ffffff;--ink:#2b2140;--mut:#6b6280;--sf:#ff8a1f;--tl:#12a39a;--pk:#e8447a;--bl:#3b6fe0;--yl:#ffc933;--card:#ffffff;--line:#f0e2c8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1830;--bg2:#241f3d;--ink:#fdf3e2;--mut:#b9b0d0;--card:#2a2548;--line:#3b3560;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c1830;--bg2:#241f3d;--ink:#fdf3e2;--mut:#b9b0d0;--card:#2a2548;--line:#3b3560;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Poppins','Noto Sans Devanagari',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg2);z-index:60}
+h1,h2,h3{font-family:'Baloo 2','Noto Sans Devanagari',sans-serif;line-height:1.15;margin:0}
+.hi{font-family:'Noto Sans Devanagari','Poppins',sans-serif}
+body[data-l="en"] .hi,body[data-l="hi"] .en{display:none}
+body[data-l="both"] .en,body[data-l="both"] .hi{display:block}
+body[data-l="both"] .hi{color:var(--sf);font-weight:600;font-size:.92em}
+body[data-l="both"] .pill .hi,body[data-l="both"] .btn .hi{color:inherit}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+section{padding:80px 0;position:relative}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg2) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.15rem}
+.logo i{font-style:normal;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--sf),var(--pk));display:grid;place-items:center;font-size:22px;animation:wob 4s ease-in-out infinite}
+.logo small{display:block;font-weight:600;font-size:.72rem;color:var(--mut);font-family:'Noto Sans Devanagari',sans-serif;line-height:1}
+nav{display:flex;gap:18px;font-weight:500;font-size:.92rem}
+nav a:hover{color:var(--sf)}
+.lang{display:flex;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:3px}
+.lang button{border:0;background:none;color:var(--ink);font:600 .78rem Poppins,sans-serif;padding:6px 11px;border-radius:99px;cursor:pointer}
+.lang button.on{background:var(--sf);color:#fff}
+@media(max-width:860px){nav{display:none}}
+.hero{padding:56px 0 90px;background:radial-gradient(circle at 85% 10%,#ffe7b0 0,transparent 45%),radial-gradient(circle at 5% 90%,#c8f3ee 0,transparent 40%),var(--bg)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{background:radial-gradient(circle at 85% 10%,#4a3a2a 0,transparent 45%),var(--bg)}}
+.hgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:center}
+@media(max-width:860px){.hgrid{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.82rem;font-weight:600;color:var(--tl);margin-bottom:16px}
+h1{font-size:clamp(2.2rem,5.4vw,3.8rem);font-weight:800}
+h1 .en b{background:linear-gradient(90deg,var(--sf),var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);margin:16px 0 26px;max-width:520px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;font-weight:600;border:2px solid var(--sf);transition:.25s;cursor:pointer;font-family:inherit;font-size:.95rem}
+.btn.p{background:var(--sf);color:#fff;box-shadow:0 10px 24px -8px var(--sf)}
+.btn.p:hover{transform:translateY(-3px) scale(1.03)}
+.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{background:var(--sf);color:#fff}
+.scene{position:relative;aspect-ratio:1/1;max-width:520px;margin:auto;width:100%;border-radius:42% 58% 55% 45%/50% 45% 55% 50%;background:linear-gradient(160deg,#8fd8ff,#ffe9b8 70%);overflow:hidden;box-shadow:0 30px 60px -25px rgba(255,138,31,.55);animation:morph 10s ease-in-out infinite}
+.scene .l{position:absolute;transition:transform .15s ease-out;will-change:transform}
+.sun{top:7%;right:10%;width:22%}.sun svg{animation:spin 25s linear infinite}
+.cl1{top:12%;left:6%;font-size:3.4rem;animation:drift 9s ease-in-out infinite}.cl2{top:26%;right:30%;font-size:2.4rem;animation:drift 12s ease-in-out infinite reverse}
+.bld{bottom:0;left:8%;width:84%}
+.kid{bottom:5%;font-size:2.6rem;animation:hop 2s ease-in-out infinite}
+.fl{position:absolute;font-size:1.6rem;animation:fall 7s linear infinite;opacity:.9}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes drift{50%{transform:translateX(26px)}}@keyframes hop{50%{transform:translateY(-14px)}}
+@keyframes wob{50%{transform:rotate(-8deg) scale(1.08)}}@keyframes morph{50%{border-radius:55% 45% 40% 60%/45% 55% 45% 55%}}
+@keyframes fall{from{transform:translateY(-40px) rotate(0)}to{transform:translateY(560px) rotate(360deg)}}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:50px}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:800;text-align:center}
+.sub{text-align:center;color:var(--mut);max-width:620px;margin:10px auto 44px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-50px;position:relative;z-index:3}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border-radius:22px;padding:22px 12px;text-align:center;border:1px solid var(--line);box-shadow:0 14px 30px -18px rgba(0,0,0,.35)}
+.stat b{font:800 2.3rem 'Baloo 2',sans-serif;color:var(--sf);display:block}
+.stat span{font-size:.85rem;color:var(--mut)}
+.alt{background:var(--bg2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px 24px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 22px 40px -20px rgba(232,68,122,.5)}
+.card .ic{font-size:2.6rem;width:68px;height:68px;display:grid;place-items:center;border-radius:20px;margin-bottom:14px;background:color-mix(in srgb,var(--c) 18%,transparent)}
+.card h3{font-size:1.3rem;margin-bottom:6px}.card p{margin:0;color:var(--mut);font-size:.92rem}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr)}}
+.ph{position:relative;aspect-ratio:3/4;border-radius:26px;overflow:hidden;perspective:700px;cursor:pointer;background:var(--g);box-shadow:0 16px 34px -20px rgba(0,0,0,.5);transition:transform .25s ease-out}
+.ph:nth-child(even){margin-top:34px}
+.ph .e{position:absolute;inset:0;display:grid;place-items:center;font-size:5.4rem;transition:transform .6s cubic-bezier(.2,.8,.2,1);animation:hop 4s ease-in-out infinite}
+.ph .e2{position:absolute;font-size:2rem;top:14%;left:14%;animation:drift 6s ease-in-out infinite}
+.ph:hover .e{transform:scale(1.35) rotate(8deg)}
+.ph .cap{position:absolute;left:0;right:0;bottom:0;padding:50px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;transform:translateY(40%);opacity:.0;transition:.4s}
+.ph:hover .cap,.ph:focus .cap{transform:none;opacity:1}
+.ph .cap .hi{color:#ffd9a0!important}
+.rv{opacity:0;transform:translate(var(--tx,0),var(--ty,40px)) scale(var(--sc,.96)) rotate(var(--r,0deg));transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;align-items:stretch}
+.pc{background:var(--card);border:2px solid var(--line);border-radius:28px;padding:32px 26px;position:relative;display:flex;flex-direction:column}
+.pc.hot{border-color:var(--sf);box-shadow:0 24px 50px -24px var(--sf)}
+.tag{position:absolute;top:-14px;right:22px;background:var(--pk);color:#fff;font-size:.74rem;font-weight:600;padding:4px 12px;border-radius:99px}
+.pc h3{font-size:1.4rem}.from{font-size:.8rem;color:var(--mut);margin-top:12px}
+.amt{font:800 2.5rem 'Baloo 2',sans-serif;color:var(--sf)}.amt small{font-size:.9rem;color:var(--mut);font-weight:500}
+.pc ul{list-style:none;padding:0;margin:14px 0 22px;font-size:.9rem;flex:1}
+.pc li{padding:6px 0 6px 26px;position:relative;border-bottom:1px dashed var(--line)}
+.pc li::before{content:"✓";position:absolute;left:0;color:var(--tl);font-weight:700}
+.note{text-align:center;color:var(--mut);font-size:.85rem;margin-top:26px}
+.cwrap{display:grid;grid-template-columns:1fr 1.2fr;gap:34px;align-items:start}
+@media(max-width:860px){.cwrap{grid-template-columns:1fr}}
+form{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;display:grid;gap:14px;box-shadow:0 20px 40px -26px rgba(0,0,0,.4)}
+label{font-size:.82rem;font-weight:600}
+input,select,textarea{width:100%;margin-top:5px;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink);font:inherit;font-size:.95rem}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--sf)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:520px){.two{grid-template-columns:1fr}}
+.info p{margin:0 0 16px}.info b{display:block}
+.msg{font-size:.85rem;color:var(--tl);min-height:1.2em}
+footer{background:#2b2140;color:#fdf3e2;text-align:center;padding:34px 20px calc(34px + env(safe-area-inset-bottom,0px));font-size:.88rem}
+footer .hi{display:block}
+.rang{height:10px;background:repeating-linear-gradient(90deg,var(--sf) 0 24px,var(--pk) 24px 48px,var(--tl) 48px 72px,var(--yl) 72px 96px)}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:4px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--sf),var(--pk),var(--tl));z-index:70}
+.w{display:inline-block}
+.rv .w{opacity:0;transform:translateY(28px) rotate(5deg);transition:opacity .6s,transform .6s cubic-bezier(.2,.8,.2,1)}
+.rv.in .w{opacity:1;transform:none}
+h2.rv{opacity:1;transform:none}
+.decos{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.deco{position:absolute;font-size:2.6rem;opacity:.16;will-change:transform}
+.mq{overflow:hidden;background:linear-gradient(90deg,var(--sf),var(--pk));color:#fff;padding:14px 0;transform:rotate(-1.2deg);margin:14px -10px;font:800 1.5rem 'Baloo 2','Noto Sans Devanagari',sans-serif;position:relative;z-index:2}
+.mq div{display:inline-block;white-space:nowrap;will-change:transform}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 14s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.14) translate(-2%,-2%)}}
+.ph.has .e,.ph.has .e2{display:none}
+.add{position:absolute;top:10px;right:10px;z-index:3;background:rgba(255,255,255,.92);color:#2b2140;font:600 .7rem Poppins,sans-serif;padding:5px 10px;border-radius:99px;cursor:pointer;opacity:0;transition:opacity .3s}
+.ph:hover .add,.ph:focus-within .add{opacity:1}
+@media(hover:none){.add{opacity:1}}
+body[data-l="both"] .add .en,body[data-l="both"] .add .hi{display:inline;color:#2b2140;font-size:inherit}
+body[data-l="both"] .add .hi::before{content:" / "}
+.dstrip{background:linear-gradient(90deg,#b8560e,#ffc933,#b8560e);background-size:200% 100%;animation:shine 5s linear infinite;color:#2b1200;text-align:center;font-weight:600;font-size:.85rem;padding:6px 10px}
+@keyframes shine{to{background-position:-200% 0}}
+.dsv{width:min(62vw,260px);height:auto;filter:drop-shadow(0 0 30px rgba(255,178,0,.45))}
+.rg{transform-origin:120px 125px;animation:spin 30s linear infinite}
+.gw{transform-box:fill-box;transform-origin:center;animation:pu 1.6s ease-in-out infinite}
+@keyframes pu{50%{opacity:.55;transform:scale(1.1)}}
+.fm{transform-box:fill-box;transform-origin:50% 100%;animation:fk .5s ease-in-out infinite alternate}
+@keyframes fk{from{transform:scale(1,.94) rotate(-2deg)}to{transform:scale(1.06,1.08) rotate(2deg)}}
+.kids{font-size:2rem;margin:4px 0 6px;letter-spacing:4px}
+.dt{font:800 clamp(2.2rem,8vw,3.4rem)/1.1 'Baloo 2','Noto Sans Devanagari',sans-serif;color:#ffd24d;text-shadow:0 0 24px rgba(255,178,0,.6)}
+#diwali .dt .hi{color:#fff3dc;font-size:.8em;text-shadow:none}
+#diwali .hi{color:#ffd27a}#diwali .btn .hi{color:#fff}
+.dm{margin:12px auto 10px;max-width:480px;font-size:1rem}
+.df{margin:0 0 20px;font-size:.88rem;opacity:.9}.df b{display:block;margin-top:4px;color:#ffd24d}
+.lt{position:absolute;bottom:-50px;font-size:1.8rem;opacity:0;z-index:1;pointer-events:none;animation:up linear infinite}
+@keyframes up{10%{opacity:.9}to{transform:translate(30px,-110vh);opacity:0}}
+.dwsec{background:linear-gradient(180deg,#2b1250 0,#3a1760 45%,#1a0b35 100%);color:#fff3dc;padding:70px 0 100px;overflow:hidden}
+.dwsec canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.dgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:center}
+.dl{text-align:center}.dr{text-align:left}
+@media(max-width:860px){.dgrid{grid-template-columns:1fr}.dr{text-align:center}}
+.dpill{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#ffd24d}
+.dwsec .dm{margin:12px 0 10px;max-width:520px}
+@media(max-width:860px){.dwsec .dm{margin-left:auto;margin-right:auto}}
+.wv2{z-index:1}.wv2 path{fill:var(--bg2)}
+#pitch{background:linear-gradient(100deg,#b3125a,#e8590c 60%,#f59e0b,#e8590c,#b3125a);background-size:250% 100%;animation:bgm 12s ease-in-out infinite alternate;color:#fff;padding:24px 0;position:relative;z-index:2}
+@keyframes bgm{to{background-position:100% 0}}
+.pt{display:grid;grid-template-columns:1.1fr 1fr;gap:20px 34px;align-items:center}
+@media(max-width:860px){.pt{grid-template-columns:1fr}}
+.ptag{display:inline-block;background:#fff;color:#b3125a;font-weight:700;font-size:.74rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:10px}
+body[data-l="both"] .ptag .en,body[data-l="both"] .ptag .hi{display:inline}
+body[data-l="both"] .ptag .hi::before{content:" · "}
+#pitch .ptag .hi{color:#b3125a;font-size:inherit}
+.pt1{font:800 clamp(1.4rem,3.4vw,2.1rem)/1.15 'Baloo 2','Noto Sans Devanagari',sans-serif}
+.pt2{margin:10px 0 14px;font-size:.9rem;max-width:560px}
+#pitch .hi{color:#fff0c2}#pitch .btn .hi{color:inherit}
+.pb{display:flex;gap:10px;flex-wrap:wrap}
+.pb .btn{background:#fff;color:#b3125a;border-color:#fff;padding:10px 20px;font-size:.88rem}
+.pb .btn:hover{transform:translateY(-2px)}
+.pb .btn.o{background:transparent;color:#fff}.pb .btn.o:hover{background:#fff;color:#b3125a}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:520px){.chips{grid-template-columns:1fr}}
+.chips div{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:12px;padding:9px 11px;font-size:.78rem;line-height:1.35;transition:transform .25s,background .25s}
+.chips div:hover{transform:translateY(-3px);background:rgba(255,255,255,.26)}
+.chips b{font-size:.86rem}
+#cta{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:55;max-width:calc(100% - 32px);background:linear-gradient(135deg,#e8447a,#ff8a1f);color:#fff;font-weight:600;font-size:.82rem;padding:12px 18px;border-radius:99px;animation:pl2 2.4s infinite}
+@keyframes pl2{0%{box-shadow:0 0 0 0 rgba(232,68,122,.6)}70%,100%{box-shadow:0 0 0 16px rgba(232,68,122,0)}}
+body[data-l="both"] #cta .en,body[data-l="both"] #cta .hi{display:inline}
+body[data-l="both"] #cta .hi::before{content:" / "}
+#cta .hi{color:#fff;font-size:inherit}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.rv .w{opacity:1;transform:none}}
+</style>
+</head>
+<body data-l="both"><div id="bar"></div>
+
+<div id="pitch"><div class="wrap pt">
+<div><span class="ptag">📢 <span class="en">THIS IS A SAMPLE WEBSITE</span><span class="hi">यह एक नमूना वेबसाइट है</span></span>
+<div class="pt1"><span class="en">Is your school lagging behind online? Build your own website today.</span><span class="hi">क्या आपका स्कूल ऑनलाइन पीछे है? आज ही अपनी वेबसाइट बनवाएँ।</span></div>
+<div class="pt2"><span class="en">Parents search online before choosing a school. A beautiful website turns that search into admission enquiries. Saraswati Vidya Mandir is only a demo of what we can build for you.</span><span class="hi">अभिभावक स्कूल चुनने से पहले ऑनलाइन खोजते हैं। एक सुंदर वेबसाइट उस खोज को प्रवेश पूछताछ में बदलती है। सरस्वती विद्या मंदिर सिर्फ़ एक डेमो है कि हम आपके लिए क्या बना सकते हैं।</span></div>
+<div class="pb"><a class="btn" href="#contact"><span class="en">Get my school’s website →</span><span class="hi">मेरे स्कूल की वेबसाइट पाएँ →</span></a><a class="btn o" href="#price"><span class="en">Packages from ₹9,999</span><span class="hi">₹9,999 से शुरू पैकेज</span></a></div></div>
+<div class="chips">
+<div>🔍 <b class="en">Get found on Google</b><b class="hi">गूगल पर दिखें</b><span class="en">when parents search for schools nearby</span><span class="hi">जब अभिभावक आसपास के स्कूल खोजें</span></div>
+<div>📈 <b class="en">More admission enquiries</b><b class="hi">ज़्यादा प्रवेश पूछताछ</b><span class="en">straight to your Gmail, 24×7</span><span class="hi">सीधे आपके Gmail पर, 24×7</span></div>
+<div>🏆 <b class="en">Builds parent trust</b><b class="hi">अभिभावकों का भरोसा</b><span class="en">a professional, modern school image</span><span class="hi">आधुनिक और पेशेवर पहचान</span></div>
+<div>📱 <b class="en">Works on every phone</b><b class="hi">हर मोबाइल पर</b><span class="en">where parents spend their time</span><span class="hi">जहाँ अभिभावक समय बिताते हैं</span></div>
+<div>🌐 <b class="en">Hindi + English</b><b class="hi">हिंदी + अंग्रेज़ी</b><span class="en">reach every family in your area</span><span class="hi">हर परिवार तक पहुँचें</span></div>
+<div>📣 <b class="en">Share news instantly</b><b class="hi">तुरंत सूचना</b><span class="en">notices, events, results and photos</span><span class="hi">सूचना, कार्यक्रम, परिणाम व फ़ोटो</span></div>
+</div></div></div>
+<a id="cta" href="#contact">💬 <span class="en">Get this for your school</span><span class="hi">अपने स्कूल के लिए पाएँ</span></a>
+<div class="dstrip">🪔 शुभ दीपावली · Happy Diwali · शुभ दीपावली 🪔</div>
+<header><div class="wrap nav">
+<a class="logo" href="#top"><i>📖</i><span>Saraswati Vidya Mandir<small>सरस्वती विद्या मंदिर · प्राथमिक विद्यालय</small></span></a>
+<nav><a href="#about"><span class="en">About</span><span class="hi">परिचय</span></a><a href="#learn"><span class="en">Learning</span><span class="hi">शिक्षा</span></a><a href="#life"><span class="en">Campus Life</span><span class="hi">जीवन</span></a><a href="#price"><span class="en">Packages</span><span class="hi">पैकेज</span></a><a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a></nav>
+<div class="lang" role="group" aria-label="Language"><button data-v="en">EN</button><button data-v="hi">हिं</button><button data-v="both" class="on">EN+हिं</button></div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hgrid">
+<div>
+<span class="pill">🌟 <span class="en">Admissions Open 2027–28</span><span class="hi">प्रवेश प्रारंभ 2027–28</span></span>
+<h1><span class="en">Where little minds <b>bloom</b> like lotus</span><span class="hi">जहाँ नन्हे मन कमल की तरह खिलते हैं</span></h1>
+<p class="lead"><span class="en">A joyful, safe and caring primary school for Nursery to Class 5 — rooted in Indian values, growing with modern learning.</span><span class="hi">नर्सरी से कक्षा 5 तक के लिए आनंदमय, सुरक्षित और स्नेहपूर्ण विद्यालय — भारतीय संस्कारों में जड़ें, आधुनिक शिक्षा के साथ विकास।</span></p>
+<div class="btns"><a class="btn p" href="#contact"><span class="en">Book a School Visit</span><span class="hi">विद्यालय भ्रमण बुक करें</span></a><a class="btn o" href="#life"><span class="en">See Campus Life</span><span class="hi">कैंपस देखें</span></a></div>
+</div>
+<div class="scene" id="scene" aria-hidden="true">
+<div class="l sun" data-d="14"><svg viewBox="0 0 100 100"><g stroke="#ffb200" stroke-width="5" stroke-linecap="round"><path d="M50 4v14M50 82v14M4 50h14M82 50h14M17 17l10 10M73 73l10 10M83 17L73 27M27 73L17 83"/></g><circle cx="50" cy="50" r="24" fill="#ffc933"/></svg></div>
+<div class="l cl1" data-d="22">☁️</div><div class="l cl2" data-d="30">☁️</div>
+<span class="fl" style="left:20%;animation-delay:0s">🌸</span><span class="fl" style="left:55%;animation-delay:2.5s">🪁</span><span class="fl" style="left:78%;animation-delay:4.5s">🌼</span>
+<div class="l bld" data-d="-8"><svg viewBox="0 0 400 220"><rect x="20" y="200" width="360" height="20" fill="#3aa860"/><rect x="90" y="80" width="220" height="120" rx="8" fill="#ff8a1f"/><rect x="160" y="30" width="80" height="60" rx="6" fill="#ffb24d"/><path d="M150 32q50-44 100 0z" fill="#e8447a"/><path d="M200 -4v26" stroke="#2b2140" stroke-width="3"/><path d="M200 -4h26l-8 8 8 8h-26z" fill="#12a39a"/><circle cx="200" cy="62" r="14" fill="#fff"/><g fill="#fff8ec"><rect x="108" y="105" width="34" height="34" rx="6"/><rect x="258" y="105" width="34" height="34" rx="6"/><rect x="108" y="150" width="34" height="30" rx="6"/><rect x="258" y="150" width="34" height="30" rx="6"/></g><path d="M172 200v-50q28-34 56 0v50z" fill="#2b2140"/></svg></div>
+<div class="l kid" style="left:6%" data-d="-18">🧒</div><div class="l kid" style="left:22%;animation-delay:.5s" data-d="-24">👧</div><div class="l kid" style="right:22%;animation-delay:1s" data-d="-24">👦</div><div class="l kid" style="right:6%;animation-delay:1.4s" data-d="-18">👩‍🏫</div>
+</div>
+</div>
+<svg class="wave" viewBox="0 0 1200 50" preserveAspectRatio="none"><path d="M0 30Q150 0 300 25T600 25T900 25T1200 20V50H0z" fill="#2b1250" class="wf"/></svg>
+</section>
+
+<section id="diwali" class="dwsec"><canvas id="fx"></canvas><div class="wrap dgrid">
+<div class="dl rv"><svg class="dsv" viewBox="0 0 240 250" aria-hidden="true"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffd24d" stop-opacity=".85"/><stop offset="1" stop-color="#ff8a1f" stop-opacity="0"/></radialGradient><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3a0"/><stop offset=".5" stop-color="#ffb200"/><stop offset="1" stop-color="#ff5a1f"/></linearGradient></defs>
+<g class="rg" fill-opacity=".85"><circle cx="120" cy="125" r="88" fill="none" stroke="#ffc933" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#e8447a"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#ffc933" transform="rotate(45 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#12a39a" transform="rotate(90 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#ff8a1f" transform="rotate(135 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#e8447a" transform="rotate(180 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#ffc933" transform="rotate(225 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#12a39a" transform="rotate(270 120 125)"/><ellipse cx="120" cy="66" rx="11" ry="26" fill="#ff8a1f" transform="rotate(315 120 125)"/></g>
+<circle class="gw" cx="120" cy="95" r="70" fill="url(#gl)"/>
+<rect x="96" y="160" width="48" height="8" rx="4" fill="#8f3a12"/><path d="M56 124q64 78 128 0z" fill="#b8501a"/><path d="M70 132q50 40 100 0" fill="none" stroke="#e8892b" stroke-width="4" opacity=".7"/><ellipse cx="120" cy="124" rx="64" ry="10" fill="#f09a35"/><ellipse cx="120" cy="123" rx="52" ry="6" fill="#ffd24d"/>
+<g class="fm"><path d="M120 52q26 34 0 70q-26-36 0-70z" fill="url(#fg)"/><path d="M120 84q10 14 0 32q-10-18 0-32z" fill="#fff6c9"/></g></svg><div class="kids">🧒🪔 👧🪔 👦🪔</div></div>
+<div class="dr rv"><span class="pill dpill">🎆 <span class="en">A festive wish for your school</span><span class="hi">आपके विद्यालय के लिए शुभकामना</span></span>
+<div class="dt"><span class="en">Happy Diwali!</span><span class="hi">शुभ दीपावली!</span></div>
+<p class="dm"><span class="en">May the festival of lights fill your school family with joy, wisdom and bright beginnings — and may every little learner shine like a diya.</span><span class="hi">दीपों का यह पर्व आपके विद्यालय परिवार में सुख, ज्ञान और नई रोशनी लेकर आए — और हर नन्हा विद्यार्थी दीये की तरह जगमगाए।</span></p>
+<p class="df"><span class="en">With warm wishes</span><span class="hi">हार्दिक शुभकामनाओं सहित</span><b id="from"></b></p>
+<a class="btn p" href="#about"><span class="en">Explore our school ↓</span><span class="hi">हमारा विद्यालय देखें ↓</span></a></div></div>
+<svg class="wave wv2" viewBox="0 0 1200 50" preserveAspectRatio="none"><path d="M0 22Q150 50 300 26T600 26T900 26T1200 30V50H0z"/></svg></section>
+
+<section class="alt" id="about" style="padding-top:0"><div class="wrap">
+<div class="stats">
+<div class="stat rv"><b data-n="25">0</b><span class="en">Years of trust</span><span class="hi">वर्षों का विश्वास</span></div>
+<div class="stat rv"><b data-n="600">0</b><span class="en">Happy students</span><span class="hi">खुशहाल विद्यार्थी</span></div>
+<div class="stat rv"><b data-n="32">0</b><span class="en">Caring teachers</span><span class="hi">स्नेही शिक्षक</span></div>
+<div class="stat rv"><b data-n="15">0</b><span class="en">Students per class</span><span class="hi">प्रति कक्षा विद्यार्थी</span></div>
+</div>
+<div style="padding-top:70px"><h2 class="rv"><span class="en">Why parents love us</span><span class="hi">अभिभावक हमें क्यों चुनते हैं</span></h2>
+<p class="sub rv"><span class="en">Learning here feels like play, and values feel like family.</span><span class="hi">यहाँ पढ़ाई खेल जैसी लगती है और संस्कार परिवार जैसे।</span></p></div>
+<div class="grid">
+<div class="card rv" style="--c:#ff8a1f"><div class="ic">📚</div><h3><span class="en">Activity-based Learning</span><span class="hi">गतिविधि आधारित शिक्षा</span></h3><p><span class="en">Stories, songs and hands-on projects make every lesson stick.</span><span class="hi">कहानी, गीत और प्रयोग से हर पाठ याद रहता है।</span></p></div>
+<div class="card rv" style="--c:#12a39a"><div class="ic">🛡️</div><h3><span class="en">Safe &amp; Secure Campus</span><span class="hi">सुरक्षित परिसर</span></h3><p><span class="en">CCTV, verified staff and safe pick-up for complete peace of mind.</span><span class="hi">सीसीटीवी, सत्यापित स्टाफ और सुरक्षित आवागमन।</span></p></div>
+<div class="card rv" style="--c:#e8447a"><div class="ic">🎨</div><h3><span class="en">Art, Music &amp; Dance</span><span class="hi">कला, संगीत और नृत्य</span></h3><p><span class="en">From rangoli to classical dance, we nurture every talent.</span><span class="hi">रंगोली से शास्त्रीय नृत्य तक, हर प्रतिभा को निखारते हैं।</span></p></div>
+<div class="card rv" style="--c:#3b6fe0"><div class="ic">🙏</div><h3><span class="en">Values &amp; Culture</span><span class="hi">संस्कार और संस्कृति</span></h3><p><span class="en">Morning prayer, festivals and respect for elders in daily life.</span><span class="hi">प्रार्थना, त्योहार और बड़ों का सम्मान दैनिक जीवन में।</span></p></div>
+</div></div></section>
+
+<section id="learn"><div class="wrap">
+<h2 class="rv"><span class="en">Our Learning Journey</span><span class="hi">हमारी शिक्षा यात्रा</span></h2>
+<p class="sub rv"><span class="en">Gentle steps from first alphabets to confident young learners.</span><span class="hi">पहले अक्षर से आत्मविश्वासी विद्यार्थी बनने तक का सरल सफ़र।</span></p>
+<div class="grid">
+<div class="card rv" style="--c:#ffc933"><div class="ic">🧸</div><h3><span class="en">Nursery – UKG</span><span class="hi">नर्सरी – यूकेजी</span></h3><p><span class="en">Play-way learning, phonics, numbers and Hindi varnamala.</span><span class="hi">खेल-खेल में अक्षर, गिनती और वर्णमाला।</span></p></div>
+<div class="card rv" style="--c:#12a39a"><div class="ic">✏️</div><h3><span class="en">Class 1 – 2</span><span class="hi">कक्षा 1 – 2</span></h3><p><span class="en">Reading, writing, basic maths and EVS through stories.</span><span class="hi">कहानियों से पढ़ना, लिखना, गणित और पर्यावरण।</span></p></div>
+<div class="card rv" style="--c:#e8447a"><div class="ic">🔬</div><h3><span class="en">Class 3 – 5</span><span class="hi">कक्षा 3 – 5</span></h3><p><span class="en">Science activities, computers, English &amp; Hindi expression.</span><span class="hi">विज्ञान गतिविधियाँ, कंप्यूटर, अंग्रेज़ी व हिंदी अभिव्यक्ति।</span></p></div>
+</div></div></section>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+<section class="alt" id="life"><div class="wrap">
+<h2 class="rv"><span class="en">Life at Saraswati Vidya Mandir</span><span class="hi">सरस्वती विद्या मंदिर में जीवन</span></h2>
+<p class="sub rv"><span class="en">Hover a photo card to see it move. Tap “Add photo” to drop in your school’s real event pictures.</span><span class="hi">फ़ोटो कार्ड पर माउस ले जाएँ। “फ़ोटो जोड़ें” दबाकर अपने स्कूल की असली तस्वीरें लगाएँ।</span></p>
+<div class="gal">
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#ffd27a,#ff8a1f)"><span class="e2">✨</span><div class="e">🪔</div><div class="cap"><b class="en">Diwali Celebration</b><b class="hi">दीपावली उत्सव</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#9de6dc,#12a39a)"><span class="e2">⭐</span><div class="e">🏃</div><div class="cap"><b class="en">Annual Sports Day</b><b class="hi">वार्षिक खेल दिवस</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#ffb0cd,#e8447a)"><span class="e2">🎵</span><div class="e">💃</div><div class="cap"><b class="en">Dance &amp; Music</b><b class="hi">नृत्य व संगीत</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#a9c2ff,#3b6fe0)"><span class="e2">🌱</span><div class="e">🔭</div><div class="cap"><b class="en">Science Fair</b><b class="hi">विज्ञान मेला</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#ffb86b,#2e9e4f)"><span class="e2">🎉</span><div class="e">🇮🇳</div><div class="cap"><b class="en">Independence Day</b><b class="hi">स्वतंत्रता दिवस</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#ffe29a,#f08a24)"><span class="e2">🌼</span><div class="e">📖</div><div class="cap"><b class="en">Saraswati Puja</b><b class="hi">सरस्वती पूजा</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#f7a1ff,#7b4de0)"><span class="e2">💦</span><div class="e">🎨</div><div class="cap"><b class="en">Holi Fun</b><b class="hi">होली उत्सव</b></div></div>
+<div class="ph rv" tabindex="0" style="--g:linear-gradient(160deg,#ffa8a8,#d63a3a)"><span class="e2">👏</span><div class="e">🎭</div><div class="cap"><b class="en">Annual Day</b><b class="hi">वार्षिकोत्सव</b></div></div>
+</div></div></section>
+
+<section id="price"><div class="wrap">
+<h2 class="rv"><span class="en">Website packages for your school</span><span class="hi">आपके विद्यालय के लिए वेबसाइट पैकेज</span></h2>
+<p class="sub rv"><span class="en">This page is a live sample. Every school is different, so prices are flexible — pay only for what you need.</span><span class="hi">यह पेज एक नमूना है। हर स्कूल अलग है, इसलिए कीमत आपकी ज़रूरत के अनुसार तय होती है।</span></p>
+<div class="price">
+<div class="pc rv"><h3><span class="en">Starter</span><span class="hi">स्टार्टर</span></h3><div class="from"><span class="en">Starting from</span><span class="hi">शुरुआती कीमत</span></div><div class="amt">₹9,999<small>*</small></div>
+<ul><li><span class="en">One-page school website</span><span class="hi">एक-पेज स्कूल वेबसाइट</span></li><li><span class="en">Hindi + English</span><span class="hi">हिंदी + अंग्रेज़ी</span></li><li><span class="en">Contact form &amp; WhatsApp button</span><span class="hi">संपर्क फ़ॉर्म व व्हाट्सऐप बटन</span></li></ul><a class="btn o" href="#contact"><span class="en">Get a quote</span><span class="hi">कोटेशन पाएँ</span></a></div>
+<div class="pc hot rv"><span class="tag"><span class="en">Most chosen</span><span class="hi">सबसे लोकप्रिय</span></span><h3><span class="en">Smart School</span><span class="hi">स्मार्ट स्कूल</span></h3><div class="from"><span class="en">Starting from</span><span class="hi">शुरुआती कीमत</span></div><div class="amt">₹24,999<small>*</small></div>
+<ul><li><span class="en">5–8 pages with animated gallery</span><span class="hi">5–8 पेज व एनिमेटेड गैलरी</span></li><li><span class="en">Admission enquiry to your email</span><span class="hi">प्रवेश पूछताछ सीधे ईमेल पर</span></li><li><span class="en">Notices, events &amp; teacher profiles</span><span class="hi">सूचना, कार्यक्रम व शिक्षक प्रोफ़ाइल</span></li></ul><a class="btn p" href="#contact"><span class="en">Get a quote</span><span class="hi">कोटेशन पाएँ</span></a></div>
+<div class="pc rv"><h3><span class="en">Complete Digital</span><span class="hi">संपूर्ण डिजिटल</span></h3><div class="from"><span class="en">Starting from</span><span class="hi">शुरुआती कीमत</span></div><div class="amt">₹49,999<small>*</small></div>
+<ul><li><span class="en">Online admissions &amp; fee info</span><span class="hi">ऑनलाइन प्रवेश व फ़ीस जानकारी</span></li><li><span class="en">Parent portal &amp; notice app</span><span class="hi">अभिभावक पोर्टल व सूचना ऐप</span></li><li><span class="en">Custom design, domain &amp; support</span><span class="hi">कस्टम डिज़ाइन, डोमेन व सपोर्ट</span></li></ul><a class="btn o" href="#contact"><span class="en">Get a quote</span><span class="hi">कोटेशन पाएँ</span></a></div>
+</div>
+<p class="note"><span class="en">*Starting prices. Final cost depends on pages, features and customisation. Domain &amp; hosting billed at actuals.</span><span class="hi">*शुरुआती कीमतें। अंतिम लागत पेज, सुविधाओं व कस्टमाइज़ेशन पर निर्भर।</span></p>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+<h2 class="rv"><span class="en">Let’s talk</span><span class="hi">आइए बात करें</span></h2>
+<p class="sub rv"><span class="en">Fill the form — it opens Gmail with your details ready to send.</span><span class="hi">फ़ॉर्म भरें — आपकी जानकारी के साथ Gmail खुल जाएगा।</span></p>
+<div class="cwrap">
+<div class="info rv"><p><b>📍 <span class="en">Address</span><span class="hi">पता</span></b>12, Gandhi Nagar, Hyderabad, Telangana</p><p><b>📞 <span class="en">Phone</span><span class="hi">फ़ोन</span></b>+91 98765 43210</p><p><b>🕘 <span class="en">School hours</span><span class="hi">समय</span></b>Mon–Sat, 8:00 AM – 2:00 PM</p><p style="font-size:.85rem;color:var(--mut)"><span class="en">Saraswati Vidya Mandir is a fictional demo school.</span><span class="hi">सरस्वती विद्या मंदिर एक काल्पनिक डेमो स्कूल है।</span></p></div>
+<form id="f" class="rv">
+<div class="two"><label>Name / नाम<input name="name" required placeholder="Your name / आपका नाम"></label><label>Phone / फ़ोन<input name="phone" type="tel" required placeholder="+91 …"></label></div>
+<div class="two"><label>School name / स्कूल का नाम<input name="school" placeholder="Your school / आपका स्कूल"></label><label>Email / ईमेल<input name="email" type="email" placeholder="you@school.in"></label></div>
+<label>Package / पैकेज<select name="pkg"><option>Starter – from ₹9,999</option><option selected>Smart School – from ₹24,999</option><option>Complete Digital – from ₹49,999</option><option>Not sure / पता नहीं</option></select></label>
+<label>Message / संदेश<textarea name="msg" rows="4" placeholder="Tell us what you need / आपकी ज़रूरत"></textarea></label>
+<button class="btn p" type="submit"><span class="en">Open in Gmail ✉️</span><span class="hi">Gmail में खोलें ✉️</span></button>
+<div class="msg" id="msg"></div>
+</form></div></div></section>
+</main>
+<div class="rang"></div>
+<footer><div>📖 Saraswati Vidya Mandir · <span class="hi" style="display:inline">सरस्वती विद्या मंदिर</span></div><div style="opacity:.7;margin-top:6px">Demo website · डेमो वेबसाइट · © 2026</div></footer>
+
+<script>
+var TO="yourname@gmail.com"; // replace with your Gmail address
+var B=document.body;
+document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){B.dataset.l=b.dataset.v;document.documentElement.lang=b.dataset.v==='hi'?'hi':'en';document.querySelectorAll('.lang button').forEach(function(x){x.classList.toggle('on',x===b)})}});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var n=e.target.querySelector('[data-n]');if(n&&!n.done){n.done=1;var t=+n.dataset.n,s=0;var iv=setInterval(function(){s+=Math.ceil(t/40);if(s>=t){s=t;clearInterval(iv)}n.textContent=s+(t>=100?'+':'')},30)}io.unobserve(e.target);var t2=e.target;setTimeout(function(){t2.classList.remove('rv','in');t2.style.transitionDelay=''},1500)}})},{threshold:.15});
+document.querySelectorAll('h2 .en,h2 .hi').forEach(function(s){s.innerHTML=s.textContent.split(' ').map(function(w,i){return '<span class="w" style="transition-delay:'+i*70+'ms">'+w+'</span>'}).join(' ')});
+var dirs=[['-70px','0px','1'],['0px','50px','.96'],['70px','0px','1']];
+document.querySelectorAll('.rv').forEach(function(el,i){var c=el.classList,d=null;
+if(c.contains('card'))d=dirs[[].indexOf.call(el.parentNode.children,el)%3];else if(c.contains('stat'))d=['0px','30px','.6'];else if(c.contains('ph')||c.contains('pc'))d=['0px','60px','.9'];else if(c.contains('info'))d=['-70px','0px','1'];else if(el.tagName==='FORM')d=['70px','0px','1'];
+if(d){el.style.setProperty('--tx',d[0]);el.style.setProperty('--ty',d[1]);el.style.setProperty('--sc',d[2])}
+if(c.contains('ph'))el.style.setProperty('--r',i%2?'6deg':'-6deg');
+el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+var sc=document.getElementById('scene');
+sc.parentNode.addEventListener('mousemove',function(e){var r=sc.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;sc.querySelectorAll('.l').forEach(function(l){var d=+l.dataset.d;l.style.transform='translate('+x*d+'px,'+y*d+'px)'})});
+document.querySelectorAll('.ph').forEach(function(p){p.addEventListener('mousemove',function(e){var r=p.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p.style.transform='rotateY('+x*18+'deg) rotateX('+(-y*18)+'deg) scale(1.04)'});p.addEventListener('mouseleave',function(){p.style.transform=''})});
+window.addEventListener('scroll',function(){var y=window.scrollY;document.querySelectorAll('.ph .e').forEach(function(e,i){e.style.marginTop=(Math.sin(y/180+i)*8)+'px'})},{passive:true});
+document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();var d=new FormData(ev.target);
+var body='Name: '+d.get('name')+'\nPhone: '+d.get('phone')+'\nSchool: '+(d.get('school')||'-')+'\nEmail: '+(d.get('email')||'-')+'\nPackage: '+d.get('pkg')+'\n\nMessage:\n'+(d.get('msg')||'-');
+var u='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(TO)+'&su='+encodeURIComponent('Website enquiry from '+d.get('name'))+'&body='+encodeURIComponent(body);
+var w=window.open(u,'_blank');document.getElementById('msg').textContent=w?'Gmail opened ✓ / Gmail खुल गया ✓':'Please allow pop-ups / कृपया पॉप-अप की अनुमति दें'});
+var PHOTOS=[]; // optional: PHOTOS[0]='data:image/jpeg;base64,...' or a hosted image URL, one per gallery card
+function setPh(p,src){var i=p.querySelector('img');if(!i){i=document.createElement('img');i.alt='School event photo';p.insertBefore(i,p.firstChild)}i.src=src;p.classList.add('has')}
+document.querySelectorAll('.ph').forEach(function(p,i){if(PHOTOS[i])setPh(p,PHOTOS[i]);var b=document.createElement('label');b.className='add';b.innerHTML='📷 <span class="en">Add photo</span><span class="hi">फ़ोटो जोड़ें</span><input type="file" accept="image/*" hidden>';p.appendChild(b);b.querySelector('input').onchange=function(){var f=this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){setPh(p,r.result)};r.readAsDataURL(f)}});
+var DE=['🪔','📖','✏️','🌸','⭐','🪁','🎨','🔔'],decos=[];
+document.querySelectorAll('section').forEach(function(s,si){var box=document.createElement('div');box.className='decos';for(var k=0;k<3;k++){var d=document.createElement('span');d.className='deco';d.textContent=DE[(si*3+k)%DE.length];d.style.left=(6+((si*37+k*41)%82))+'%';d.style.top=(8+((si*23+k*35)%70))+'%';box.appendChild(d);decos.push([d,s,.08+k*.07])}s.appendChild(box)});
+var bar=document.getElementById('bar'),hs=document.querySelector('.hgrid>div'),mq=document.getElementById('mq'),mu=0,tk=0;
+mq.innerHTML=new Array(9).join('<span>🪔 Prayer · प्रार्थना &nbsp;✦&nbsp; 🏃 Sports · खेल &nbsp;✦&nbsp; 🎨 Art · कला &nbsp;✦&nbsp; 🎵 Music · संगीत &nbsp;✦&nbsp; 🔬 Science · विज्ञान &nbsp;✦&nbsp; </span>');
+function tick(){tk=0;var y=window.scrollY,h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?y/h:0)+')';
+if(y<900){sc.style.transform='translateY('+y*.14+'px) rotate('+y*.012+'deg)';hs.style.transform='translateY('+y*.07+'px)';hs.style.opacity=Math.max(0,1-y/650)}
+decos.forEach(function(a){var t=a[1].getBoundingClientRect().top;a[0].style.transform='translateY('+(t*a[2])+'px) rotate('+(t*.08)+'deg)'});
+if(mu)mq.style.transform='translateX('+(-(y*.8%mu))+'px)'}
+addEventListener('scroll',function(){if(!tk){tk=1;requestAnimationFrame(tick)}},{passive:true});
+function mm(){mu=mq.scrollWidth/8}
+addEventListener('load',function(){mm();tick()});addEventListener('resize',mm);mm();tick();
+var FROM=""; // optional: your name or studio, shown under the Diwali wish
+document.getElementById('from').textContent=FROM?'— '+FROM:'';
+var ds=document.getElementById('diwali'),fx=document.getElementById('fx'),cx=fx.getContext('2d'),PS=[],run=0,vis=0,red=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function rs(){fx.width=ds.clientWidth;fx.height=ds.clientHeight}rs();addEventListener('resize',rs);addEventListener('load',rs);
+function burst(px,py){var h=[20,40,50,330,170][Math.floor(Math.random()*5)];for(var i=0;i<60;i++){var a=Math.PI*2*i/60,s=Math.random()*4+1.5;PS.push({x:px,y:py,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:1,c:'hsl('+(h+Math.random()*20)+',100%,'+(55+Math.random()*15)+'%)'})}go()}
+function loop(){cx.globalCompositeOperation='destination-out';cx.fillStyle='rgba(0,0,0,.2)';cx.fillRect(0,0,fx.width,fx.height);cx.globalCompositeOperation='lighter';PS=PS.filter(function(p){return p.l>0});PS.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.vy+=.045;p.vx*=.985;p.l-=.011;cx.globalAlpha=Math.max(p.l,0);cx.fillStyle=p.c;cx.fillRect(p.x,p.y,2.4,2.4)});cx.globalAlpha=1;if(!vis&&!PS.length){run=0;cx.clearRect(0,0,fx.width,fx.height);return}requestAnimationFrame(loop)}
+function go(){if(!run){run=1;loop()}}
+for(var li=0;li<8;li++){var s=document.createElement('span');s.className='lt';s.textContent=li%3?'🏮':'🪔';s.style.left=(6+li*12)+'%';s.style.animationDelay=(li*1.3)+'s';s.style.animationDuration=(9+li%4*2)+'s';ds.appendChild(s)}
+new IntersectionObserver(function(es){vis=es[0].isIntersecting;if(vis&&!red)burst(fx.width*.5,fx.height*.3)},{threshold:.3}).observe(ds);
+ds.addEventListener('pointerdown',function(e){var r=ds.getBoundingClientRect();burst(e.clientX-r.left,e.clientY-r.top)});
+setInterval(function(){if(vis&&!red)burst(Math.random()*fx.width,Math.random()*fx.height*.6)},700);
+new IntersectionObserver(function(e){document.getElementById('cta').style.display=e[0].isIntersecting?'none':''},{threshold:.2}).observe(document.getElementById('contact'));
+</script>
+</body>
+</html>
